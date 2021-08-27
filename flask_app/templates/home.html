@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Titanic Survival Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Survival Prediction on Titanic</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the values for Sex, Age, SibSp, Parch and Pclass.</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="Sex"><p class="font-weight-bold">Sex</p></label>
+              <input type="text" name="Sex">
+              <small id="SexHelp" class="form-text text-muted">Enter 1 for Female and 0 for Male</small>
+              </div>
+
+              <div class="form-group">
+                <label for="Age"><p class="font-weight-bold">Age</p></label>
+                <input type="text" name="Age">
+                <small id="AgeHelp" class="form-text text-muted">Enter Age value</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="SibSp"><p class="font-weight-bold">Sibling and Spouse</p></label>
+                  <input type="text" name="SibSp">
+                  <small id="SibSpHelp" class="form-text text-muted">Enter values 0 to 10</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Parch"><p class="font-weight-bold">Parent and Child</p></label>
+                    <input type="text" name="Parch">
+                    <small id="ParchHelp" class="form-text text-muted">Enter values 0 to 10</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Pclass"><p class="font-weight-bold">Passenger Class</p></label>
+                      <input type="text" name="Pclass">
+                      <small id="PclassHelp" class="form-text text-muted">Enter either 1, 2 or 3</small>
+                      </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
